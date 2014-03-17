@@ -1,0 +1,19 @@
+import re
+def unflaten_dict(d,result=None):
+	if result==None: 
+		result={}
+	t={}
+	z=[]
+	e=[]
+	q={}
+	s=""
+	for k,v in d.items():
+		if "." in k:
+			z=k.split('.')
+			return z[1]
+			print z
+		else:
+			return result[k]=v
+		
+	
+print unflaten_dict({'a': 1, 'b.x': 2, 'b.y': 3, 'c': 4})0
